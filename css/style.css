@@ -1,0 +1,376 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  line-height: 1.3;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header {
+  background-color: #151515;
+}
+
+.header-main {
+  background-color: transparent;
+  z-index: 5;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.header__inner {
+  padding-top: 40px;
+  padding-bottom: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.menu__list {
+  display: flex;
+  gap: 35px;
+}
+
+.menu__list-link {
+  color: rgb(247, 240, 240);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.top {
+  color: rgb(244, 238, 245);
+  text-align: center;
+  padding-top: 105px;
+  padding-bottom: 50px;
+  z-index: 5;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.title {
+  padding-bottom: 40px;
+  font-size: 96px;
+  font-weight: 700;
+}
+
+.top__link {
+  padding: 23px 112px;
+  background-color: #151515;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.swiper::after {
+  content: "";
+  background: rgba(21, 21, 21, 0.3);
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.swiper-wrapper {
+  background: rgba(21, 21, 21, 0.3);
+}
+
+.swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.swiper-pagination-bullet {
+  width: 120px;
+  height: 3px;
+  background-color: #151515;
+  border-radius: 0;
+  opacity: 1;
+  margin: 0 30px !important;
+}
+.swiper-pagination-bullet-active {
+  height: 6px;
+  background-color: #fff;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 28px;
+}
+/*
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 96px;
+  max-width: 874px;
+  align-items: center;
+  margin-top: 152px;
+  margin-bottom: 61px;
+}
+
+.top__link {
+  padding: 23px 112px;
+  background-color: #151515;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  justify-content: center;
+}
+*/
+
+.footer {
+  background-color: #151515;
+  padding: 50px 0 32px;
+  color: #fff;
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.footer__menu-title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.footer__menu-item + .footer__menu-item {
+  padding-top: 20px;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  gap: 39px;
+  margin-bottom: 59px;
+}
+
+.footer__copy {
+  font-size: 12px;
+  text-align: center;
+  align-items: center;
+  max-width: 806px;
+  margin: 0 auto 30px;
+}
+
+.copy__nav-list {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.why-lease {
+  padding: 150px 0;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.why-lease__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+
+.why-lease__item-img {
+  margin-bottom: 30px;
+}
+
+.why-lease__item-title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.why-lease__item-text {
+  text-align: left;
+}
+
+/* lease work */
+
+.how-does__inner {
+  width: 594px;
+  margin: 0 auto;
+}
+.how-does__title {
+  padding-bottom: 50px;
+}
+.how-does__text {
+  margin-bottom: 50px;
+}
+
+/*
+- creating folder ~ lease-cars Opening in VSC 
+- creating first file index.html
+- ! tab
+1. Creating wrapper (shell for all content) Inside of this wrapper will be all content ~<body><div class="wrapper"></div></body>  wrapper is classic name and other developers know that it is outter shell. 
+<div class="wrapper">
+        <header class="header"></header>
+        <main class="main"></main>
+        <footer class="footer"></footer>
+</div>
+
+2. for classes names if something located inside of something else we use "inner" ~ <header class="header"> <div class="header__inner">
+-litterally for every tag give name
+
+3. menu is a link <a> located in <ul><li> 
+  <nav class="menu">
+    <ul class="menu__list">
+      <li class="menu__list-item">
+        <a href="" class="menu__list-link"></a>
+
+4. In VSC when writing styles it convenient to open style.css in a second window. It done by dragging file from side bar (left side) all the way to right side. And to close juse press x in the tab above it. 
+
+- connecting css file. First create folder CSS and inside create file style.css, then before closing head tag we write tag link tab and connect src='css/style.css'
+<link rel="stylesheet" href="css/style.css" />
+  </head>
+
+- in order to see what is containers cover we apply background-color to it~ .container {background-color: lightblue;}
+
+- in Figma in order to measure something we can select Rectangular object and then move it throught desired distance and it will show distance; or we can do substraction on top, where ruler is, from one end to another one. 
+
+- Zen coding: m0-a ~ margin: 0 auto; we use '-' when we need to put two parameteres in Zen coding
+
+5 New (better way) of creating template for all html file: 
+html {box-sizing: border-box;}
+*, *::after, *::before {box-sizing: inherit;}
+Before they used content-box ~ html {box-sizing: content-box} but it is not so good as border-box
+* -- means all tags. For example div.wrapper property box-sizing will inherit this property from parent element, in this case form <body> and body will inherit from parent <html> box-sizing: border-box; therefore all tags will have same property for box-sizing: which is border-box;
+
+Because by default browser add some margins, for example for <body> it adds 8px, for this reason we add 0 margin/padding here. *::before {box-sizing: inherit;
+  margin: 0;
+  padding: 0;}
+
+- For better user expirience (readability) (mostly on mobile devices) we have to add small padding (space) between edge of screen and content ~ .container{padding: 0 10px}, therefore we have to add those 20 px to total max-width 1200 + 20 = 1220px new max width .container{max-width: 1200px}
+
+- Computed Tab shows paddings & margins
+
+6. To make space between links in menu use gap: 35px;
+
+7. ul {list-style-type: none;} is same thing as list-style: none
+
+8. in body tag we apply properties that will be apply to whole website, for example body {font-size: 16px; font-weight: 400;} 
+
+- adding font here for whole website
+
+9. Align items to bottom of the element we apply align-items: end; or flex-end;
+When logo and navigations located at the middle of element, than with this property we pushed to the bottom of that element
+
+- tag <header> take all space
+
+- it looks like in multi pages after header, he recommends to do footer not main
+
+10. <header class="header header-main"> 
+.header {background-color: #151515;} then we adding extra class
+.header-main {background-color: transparent;} Transparent make it invisible color. For example here .header background color is black but then .header-main background color is transparent so it makes black disapper. It need because in main page header will have image background but in another pages it will have black background.
+
+- justify-content: space-around; it creates some space from left and right edges and then equal space between elements (like in footer 4 elements) unlike space-between put elements on edges 
+
+11. line-height: x.x (something like 1.3) depends on design and we only put it once for <body>, instead of writing everytime to each element ~line-height: 1.3 so line-height will be 20.8px
+
+12. to be precize, without leaving some extra padding, excelent technigue to use element + element. For example if we have list of 4 elements, located verticaly and we do not want to apply this padding to first element so we use this format: .footer__menu-item + .footer__menu-item {padding-top: 20px;}. How is it working. So html reading happeing from top to bottom. So it will go down till it find first element with class .footer__menu-item then it will look for second element with class .footer__menu-item and apply specified property to second element. It won't apply for first element. 
+
+- text-align: center; align text ;; align-items: center; align elements in flex
+
+- to create extra page for website just copy paste whole index.html file
+
+- name of the file is name of right part of url  .../index.html and /contacts.css 
+
+- in <main> tag we create sections 
+
+13. When button leads to another page it is not <button> tag but <a> tag, regular button is like submit <button>.
+
+14. CDN is content delivery network. Idea behind of it that servers located in many parts of the world and when user need to see content of internet CDN will connect user to nearest CDN server, which leads for faster loading of content. 
+We attach application's (swiper.js) cdn in css <link> and js <script>
+It is better practise to download swiper file rather than attach as above. Save as and add before closing </body> tag as <script> <script src="js/swiper-bundle.min.js"></script> 
+It might need to add swipoer .css file 
+
+- create js folder, where JavaScript will be located like js/main.js
+
+next step to see in docs html structure of swiper and copy class names and structure of it
+
+next step to copy it is css property
+
+and next step how to connect it in js
+
+There is something interesting we can go to tab DEMOS, there will be examples of sliders functionality and we chose whatever we like then press CORE it will lead us to sandbox, we can play there and copy what we need, for example js of it, that located between <script> tags to our main.js file and change var to const
+
+we need to specify height of slider otherwise it is 0
+
+15 In figma when we click on image, then design and at the bottom Export and there is button Preview it will show what will be export and if there is some buttons, text on image we can hide them by clicking on rihgt hand side structure, where it is image and press 'eye' button to hide elements that we do not need in our image. 
+
+16. For images that change (for sliders) we must use inline style ~<div class="swiper-slide" style="background-image: url(images/slide-1.jpg)"></div>. It is backenders workd with html, they do not work with css. 
+
+17. Because html's markup locate everything one below another one. So just with markup there is no way to locate something in 3D, so for this reason there is property named z-index, just give any number. And also apply position:absolute;
+Example: slider has to be on the back and header and text has to be in front of slider. Therefore for header and text we apply: z-index: 5; position:absolute; and for slider we do not apply anything. 
+With this comes that they will be position to one side. So we have to add left: 0 and right: 0 to them
+
+18. For slider's pagination. It has automatic border-radius: 50% so we change to 0. 
+
+19. When we click on element and if we do not understand something in Styles tab we can go to Computed tab and it will show all properties applied to that element. 
+
+20. In slider's default class names can be few lines long with higher priority and in order to overide and not to write long name with just add to property !important; ~margin: 0 30px !important; Usually it is not a good practise but it is better than to write long name
+
+21. property bottom: 20px; it will lift any element with property bottom to specified value from bottom edge. 
+
+22. Autoplay for slider it is in documentaion of the slider and copy it to .js file    autoplay: {delay: 5000,},
+
+- as well as we also can add effects like ~effect: 'fade', 
+
+*/

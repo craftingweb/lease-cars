@@ -248,11 +248,17 @@ body {
   width: 594px;
   margin: 0 auto;
 }
-.how-does__title {
+.how-does__title,
+.how-does__text,
+.how-does__subtitle {
   padding-bottom: 50px;
 }
+.how-does__title {
+  font-size: 48px;
+}
 .how-does__text {
-  margin-bottom: 50px;
+}
+.how-does__subtitle {
 }
 
 /*

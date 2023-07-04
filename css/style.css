@@ -243,13 +243,11 @@ body {
 }
 
 /* lease work */
-.how-does {
-  margin-bottom: 150px;
-}
 
 .how-does__inner {
   max-width: 594px;
   margin: 0 auto;
+  margin-bottom: 150px;
 }
 .how-does__title,
 .how-does__text,
@@ -296,6 +294,27 @@ body {
   top: 0;
 }
 
+.video__inner {
+  /* max-width: 694px; */
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+
+.video__title {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.video__subtitle {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.video__content {
+  margin: 0 auto;
+  display: block;
+}
 /*
 - creating folder ~ lease-cars Opening in VSC 
 - creating first file index.html
@@ -413,5 +432,7 @@ With this comes that they will be position to one side. So we have to add left: 
 22. Autoplay for slider it is in documentaion of the slider and copy it to .js file    autoplay: {delay: 5000,},
 
 - as well as we also can add effects like ~effect: 'fade', 
+
+23. video youtube - share - imbed and just paste it. Iframe is inline so we need to display: block to center it.
 
 */

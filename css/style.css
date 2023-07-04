@@ -259,17 +259,25 @@ body {
 .how-does__title {
   font-size: 48px;
 }
-.how-does__text {
-}
-.how-does__subtitle {
-}
+
 .how-does__list {
   padding-bottom: 70px;
   counter-reset: myCounter;
 }
 .how-does__item {
   list-style: none;
+  width: 270px;
+  position: relative;
+  margin-left: auto;
+  box-sizing: content-box;
+  padding: 19px 0 19px 240px;
+  min-height: 63px;
 }
+
+.how-does__item + .how-does__item {
+  margin-top: 40px;
+}
+
 .how-does__item::before {
   counter-increment: myCounter;
   content: counter(myCounter);
@@ -283,6 +291,9 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 /*

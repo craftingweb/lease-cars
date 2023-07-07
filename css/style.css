@@ -250,9 +250,11 @@ body {
   margin-bottom: 150px;
 }
 .how-does__title,
-.how-does__text,
 .how-does__subtitle {
   padding-bottom: 50px;
+}
+.how-does__subtitle {
+  margin-top: 50px;
 }
 .how-does__title {
   font-size: 48px;
@@ -314,6 +316,36 @@ body {
 .video__content {
   margin: 0 auto;
   display: block;
+}
+
+/* important section */
+.important__title {
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.important__text {
+  width: 580px;
+  margin: 0 auto 50px;
+}
+
+.important__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* gap: 40px; */
+}
+
+.important__item-img {
+  margin-bottom: 20px;
+}
+
+.important__item-text {
+  margin-bottom: 98px;
 }
 /*
 - creating folder ~ lease-cars Opening in VSC 

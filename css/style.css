@@ -48,7 +48,7 @@ body {
 
 .header-main {
   background-color: transparent;
-  z-index: 5;
+  z-index: 10;
   position: absolute;
   left: 0;
   right: 0;
@@ -467,4 +467,5 @@ With this comes that they will be position to one side. So we have to add left: 
 
 23. video youtube - share - imbed and just paste it. Iframe is inline so we need to display: block to center it.
 
+24. Connecting to other pages: just in menu links specify name of file. At that extra page looks like will be copied header and footer and everything inside of it as well as main but will empty and we will fill that page like contact.html it will be inside main.
 */

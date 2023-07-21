@@ -347,6 +347,21 @@ body {
 .important__item-text {
   margin-bottom: 98px;
 }
+
+/* Contact Page */
+.contacts {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.contacts__title {
+  margin-bottom: 20px;
+}
+
+.contacts__text {
+  margin-bottom: 50px;
+}
+
 /*
 - creating folder ~ lease-cars Opening in VSC 
 - creating first file index.html

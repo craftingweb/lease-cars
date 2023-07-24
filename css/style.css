@@ -362,6 +362,30 @@ body {
   margin-bottom: 50px;
 }
 
+.form {
+  max-width: 580px;
+  margin-bottom: 150px;
+  margin: 0 auto;
+  /* align-items: center; */
+}
+
+.form__input {
+  width: 270px;
+  margin-right: 40px;
+  height: 57px;
+  margin-bottom: 50px;
+}
+
+.form__input-outer {
+  display: flex;
+}
+
+.form__textarea {
+  width: 580px;
+  height: 291px;
+  margin-bottom: 50px;
+}
+
 /*
 - creating folder ~ lease-cars Opening in VSC 
 - creating first file index.html
@@ -483,4 +507,6 @@ With this comes that they will be position to one side. So we have to add left: 
 23. video youtube - share - imbed and just paste it. Iframe is inline so we need to display: block to center it.
 
 24. Connecting to other pages: just in menu links specify name of file. At that extra page looks like will be copied header and footer and everything inside of it as well as main but will empty and we will fill that page like contact.html it will be inside main
+
+-- 2 inputs and text area did not center them with help of align-items, text-align; solution is margin: 0 auto 
 */

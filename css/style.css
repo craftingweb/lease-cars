@@ -371,19 +371,21 @@ body {
 
 .form__input {
   width: 270px;
-  margin-right: 40px;
   height: 57px;
   margin-bottom: 50px;
+  border: 1px solid #0066ff;
 }
 
 .form__input-outer {
   display: flex;
+  justify-content: space-between;
 }
 
 .form__textarea {
   width: 580px;
   height: 291px;
   margin-bottom: 50px;
+  border: 1px solid #0066ff;
 }
 
 /*
@@ -509,4 +511,5 @@ With this comes that they will be position to one side. So we have to add left: 
 24. Connecting to other pages: just in menu links specify name of file. At that extra page looks like will be copied header and footer and everything inside of it as well as main but will empty and we will fill that page like contact.html it will be inside main
 
 -- 2 inputs and text area did not center them with help of align-items, text-align; solution is margin: 0 auto 
+- And when 2 inputs in one line, instead of writing margin-right: 40px, it will extra after second input, solution justify-content: space-between
 */

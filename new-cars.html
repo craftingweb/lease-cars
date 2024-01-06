@@ -51,15 +51,27 @@
             <h2 class="section-title">Choose your car</h2>
             <div class="tabs">
               <div class="tabs__btn">
-                <button class="tabs__btn-item tabs__btn-item--active">
+                <button
+                  class="tabs__btn-item tabs__btn-item--active"
+                  data-button="content-1"
+                >
                   Car and Minivan
                 </button>
-                <button class="tabs__btn-item">Trucks</button>
-                <button class="tabs__btn-item">Crossovers & SUVs</button>
-                <button class="tabs__btn-item">Electrified</button>
+                <button class="tabs__btn-item" data-button="content-2">
+                  Trucks
+                </button>
+                <button class="tabs__btn-item" data-button="content-3">
+                  Crossovers & SUVs
+                </button>
+                <button class="tabs__btn-item" data-button="content-4">
+                  Electrified
+                </button>
               </div>
               <div class="tabs__content">
-                <div class="tabs__content-item">
+                <div
+                  class="tabs__content-item tabs__content-item--active"
+                  id="content-1"
+                >
                   <div class="card">
                     <img class="card-img" src="images/card-1.jpg" alt="" />
                     <div class="card__content">
@@ -169,9 +181,75 @@
                     <a class="card__link" href="#">see details</a>
                   </div>
                 </div>
-                <div class="tabs__content-item">2</div>
-                <div class="tabs__content-item">3</div>
-                <div class="tabs__content-item">4</div>
+                <div class="tabs__content-item" id="content-2">
+                  <div class="card">
+                    <img class="card-img" src="images/card-4.jpg" alt="" />
+                    <div class="card__content">
+                      <h2 class="card__title">Chevrolet Silverado</h2>
+                      <p class="card__text">starting from $ 62260</p>
+                      <p class="card__price">$ 1032/mo</p>
+                    </div>
+                    <a class="card__link" href="#">see details</a>
+                  </div>
+                </div>
+                <div class="tabs__content-item" id="content-3">
+                  <div class="card">
+                    <img class="card-img" src="images/card-9.jpg" alt="" />
+                    <div class="card__content">
+                      <h2 class="card__title">Honda CR-V 2025</h2>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 650/mo</p>
+                    </div>
+                    <a class="card__link" href="#">see details</a>
+                  </div>
+                  <div class="card">
+                    <img class="card-img" src="images/card-10.jpg" alt="" />
+                    <div class="card__content">
+                      <h2 class="card__title">Hyundai Tucson 2025</h2>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 450/mo</p>
+                    </div>
+                    <a class="card__link" href="#">see details</a>
+                  </div>
+                  <div class="card">
+                    <img class="card-img" src="images/card-11.jpg" alt="" />
+                    <div class="card__content">
+                      <h2 class="card__title">Chevrolet Equinox</h2>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 1013/mo</p>
+                    </div>
+                    <a class="card__link" href="#">see details</a>
+                  </div>
+                  <div class="card">
+                    <img class="card-img" src="images/card-12.jpg" alt="" />
+                    <div class="card__content">
+                      <h2 class="card__title">Jeep Wrangler 2025</h2>
+                      <p class="card__text">starting from $ 62260</p>
+                      <p class="card__price">$ 1032/mo</p>
+                    </div>
+                    <a class="card__link" href="#">see details</a>
+                  </div>
+                </div>
+                <div class="tabs__content-item" id="content-4">
+                  <div class="card">
+                    <img class="card-img" src="images/card-5.jpg" alt="" />
+                    <div class="card__content">
+                      <h2 class="card__title">Toyota Prius 2025</h2>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 650/mo</p>
+                    </div>
+                    <a class="card__link" href="#">see details</a>
+                  </div>
+                  <div class="card">
+                    <img class="card-img" src="images/card-6.jpg" alt="" />
+                    <div class="card__content">
+                      <h2 class="card__title">Hyundai Kona 2025</h2>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 450/mo</p>
+                    </div>
+                    <a class="card__link" href="#">see details</a>
+                  </div>
+                </div>
               </div>
             </div>
             <a href="#" class="showmore-link">SHOW MORE</a>
@@ -302,5 +380,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>

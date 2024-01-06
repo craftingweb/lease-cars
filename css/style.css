@@ -73,6 +73,10 @@ body {
   font-weight: 700;
 }
 
+.menu__list-link--active {
+  color: #0066ff;
+}
+
 .top {
   color: rgb(244, 238, 245);
   text-align: center;
@@ -428,6 +432,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+  margin-bottom: 70px;
 }
 
 .blog__item {
@@ -450,6 +455,16 @@ body {
   color: #fff;
   background-color: #0066ff;
   padding: 4px 20px;
+}
+
+.blog__link {
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  padding: 13px 61px;
+  width: 225px;
+  margin: 0 auto;
+  display: block;
 }
 /*
 - creating folder ~ lease-cars Opening in VSC 

@@ -547,6 +547,76 @@ body {
   background-color: transparent;
   padding: 0;
 }
+
+.menu__btn {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.menu__btn span {
+  height: 2px;
+  background-color: #fff;
+  width: 100%;
+}
+
+/*----------------------Media----------------------*/
+@media (max-width: 1180px) {
+  .important__list {
+    gap: 30px 20px;
+  }
+  .important__item-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1040px) {
+  .video__content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 860px) {
+  .menu__btn {
+    display: flex;
+  }
+  .menu__btn,
+  .logo {
+    z-index: 10;
+    position: relative;
+  }
+  .menu__list {
+    position: absolute;
+    z-index: 5;
+    background-color: #151515;
+    flex-direction: column;
+    padding-top: 200px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    align-items: center;
+    transform: translateY(-100%);
+  }
+  .menu__list.menu__list--active {
+    transform: translateY(0%);
+  }
+  .important__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .why-lease__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
 /*
 - creating folder ~ lease-cars Opening in VSC 
 - creating first file index.html

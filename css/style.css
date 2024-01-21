@@ -477,11 +477,10 @@ body {
 }
 
 .tabs__btn {
-  padding: 0 150px;
+  padding: 0 150px 100px;
   display: flex;
   justify-content: space-between;
   gap: 80px;
-  padding-bottom: 100px;
 }
 
 .tabs__btn-item--active {
@@ -568,6 +567,10 @@ body {
   width: 100%;
 }
 
+.card-img {
+  width: 100%;
+}
+
 /*----------------------Media----------------------*/
 @media (max-width: 1180px) {
   .important__list {
@@ -576,11 +579,18 @@ body {
   .important__item-img {
     width: 100%;
   }
+  .tabs__content-item {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 1040px) {
   .video__content {
     width: 100%;
+  }
+  .tabs__btn {
+    padding: 0 0 50px;
+    gap: 20px;
   }
 }
 
@@ -618,6 +628,9 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
+  .tabs__content-item {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -643,6 +656,21 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .tabs__content-item {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tabs__btn-item {
+    font-size: 18px;
+  }
+  .blog__items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog__item-link {
+    margin-top: 20px;
   }
 }
 
@@ -673,7 +701,7 @@ body {
   }
   .video__inner {
     margin-bottom: 50px;
-}
+  }
   .video__content {
     height: 200px;
   }
@@ -683,16 +711,23 @@ body {
   }
   .important__text {
     width: 280px;
-}
+  }
   .how-does__item::before {
     right: 0;
     margin: 0 auto;
     width: 50px;
     height: 50px;
     font-size: 32px;
-}
-.important__list {
-  grid-template-columns: repeat(1, 1fr);
+  }
+  .important__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .form__input {
+    width: 100%;
+  }
+  .form__input-outer {
+    flex-direction: column;
+  }
 }
 /*
 - creating folder ~ lease-cars Opening in VSC 
